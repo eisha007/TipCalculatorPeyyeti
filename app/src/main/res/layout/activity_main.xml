@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/myLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryDark"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+
+    <TextView
+        android:id="@+id/titleTextView"
+        android:layout_width="408dp"
+        android:layout_height="165dp"
+        android:background="@color/colorPrimary"
+        android:fontFamily="monospace"
+        android:text="Eisha's Fabulous Tip Calculator"
+        android:textColor="@color/colorPrimaryDark"
+        android:textColorHint="@color/colorPrimary"
+        android:textColorLink="#00C50E0E"
+        android:textSize="45sp"
+        tools:layout_conversion_absoluteHeight="166dp"
+        tools:layout_conversion_absoluteWidth="411dp"
+        tools:layout_editor_absoluteX="10dp"
+        tools:layout_editor_absoluteY="16dp" />
+
+    <RatingBar
+        android:id="@+id/rate"
+        android:layout_width="236dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="88dp"
+        android:layout_marginTop="255dp"
+        android:layout_marginEnd="87dp"
+        android:layout_marginBottom="421dp"
+        android:numStars="5"
+        android:stepSize="1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_conversion_absoluteHeight="57dp"
+        tools:layout_conversion_absoluteWidth="240dp" />
+
+    <Button
+        android:id="@+id/rateButton"
+        android:layout_width="304dp"
+        android:layout_height="46dp"
+        android:layout_marginStart="53dp"
+        android:layout_marginTop="356dp"
+        android:layout_marginEnd="54dp"
+        android:layout_marginBottom="329dp"
+        android:onClick="rating"
+        android:text="CALCULATE (using stars)"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_conversion_absoluteHeight="48dp"
+        tools:layout_conversion_absoluteWidth="411dp" />
+
+    <EditText
+        android:id="@+id/Choice"
+        android:layout_width="218dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="96dp"
+        android:layout_marginTop="419dp"
+        android:layout_marginEnd="97dp"
+        android:layout_marginBottom="272dp"
+        android:ems="10"
+        android:hint="OR enter your own tip %"
+        android:inputType="textPersonName"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_conversion_absoluteHeight="48dp"
+        tools:layout_conversion_absoluteWidth="240dp" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="84dp"
+        android:layout_marginTop="459dp"
+        android:layout_marginEnd="84dp"
+        android:layout_marginBottom="224dp"
+        android:onClick="calculate"
+        android:text="CALCULATE (using custom tip)"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_conversion_absoluteHeight="48dp"
+        tools:layout_conversion_absoluteWidth="208dp" />
+
+    <TextView
+        android:id="@+id/Tip"
+        android:layout_width="337dp"
+        android:layout_height="53dp"
+        android:layout_marginStart="138dp"
+        android:layout_marginTop="545dp"
+        android:layout_marginEnd="138dp"
+        android:layout_marginBottom="151dp"
+        android:text="Tip Amount"
+        android:textSize="26sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_conversion_absoluteHeight="54dp"
+        tools:layout_conversion_absoluteWidth="411dp" />
+
+    <TextView
+        android:id="@+id/Final"
+        android:layout_width="356dp"
+        android:layout_height="54dp"
+        android:layout_marginStart="127dp"
+        android:layout_marginTop="601dp"
+        android:layout_marginEnd="128dp"
+        android:layout_marginBottom="78dp"
+        android:text="Total Bill"
+        android:textSize="40sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_conversion_absoluteHeight="54dp"
+        tools:layout_conversion_absoluteWidth="411dp" />
+
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="231dp"
+        android:layout_height="46dp"
+        android:layout_marginStart="93dp"
+        android:layout_marginTop="310dp"
+        android:layout_marginEnd="87dp"
+        android:layout_marginBottom="375dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Poor | Lacking | Good | Amazing | Perfect |"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/Bill"
+        android:layout_width="267dp"
+        android:layout_height="46dp"
+        android:layout_marginStart="72dp"
+        android:layout_marginTop="209dp"
+        android:layout_marginEnd="72dp"
+        android:layout_marginBottom="476dp"
+        android:ems="10"
+        android:hint="Bill Cost"
+        android:inputType="number"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+</android.support.constraint.ConstraintLayout>
